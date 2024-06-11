@@ -1,0 +1,32 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.wppbutton{
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    font-size: 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+
+}
+
+
+.wppbutton a{
+    width: 100%;
+    max-height: 50px;
+    bottom: 0;
+    overflow: hidden;
+    color: white;
+}

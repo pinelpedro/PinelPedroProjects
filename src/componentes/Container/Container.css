@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.centralizer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+.container{
+
+    width: 100%;
+    border-color: black solid;
+    border-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .mesa{
+    background-color: #6a6a6a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}

@@ -1,0 +1,102 @@
+/* Reset */
+
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  text-align: center;
+  
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  color: black;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5c9ead;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #517f86;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  margin-bottom: 10px;
+}
+
+.social-media li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.footer-bottom p{
+color: white;
+}

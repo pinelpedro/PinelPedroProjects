@@ -1,24 +1,39 @@
-import { useState } from "react";
 
+import Footer from './componentes/Footer/FooterForm.jsx'
+import Container from './componentes/Container/Container.jsx'
+import PerfilSuperior from './componentes/PerfilCenter/PerfilSuperior.jsx'
+import Item from './componentes/Item/GithubRequest.jsx'
+import WppButton from './componentes/Wpp Button/WppButton.jsx'
+
+
+import './index.css'
+
+
+import profil from './Img/profil.png'
+import backgrounds from './Img/backg.gif'
 
 import "./App.css";
 
 
 function App() {
-  const [count, setCount] = useState(0);
+
 
   
 
   return (
     <>
-      <div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-      </div>
+
+      <WppButton />
+    <PerfilSuperior
+    name={'Testinho'}
+    bio={'Toto'}
+    backgroundImage={backgrounds} 
+    profileImage={profil}/>
+    <Container>
+      <Item />
+    </Container>
+    <Footer />
+
     </>
   );
 }

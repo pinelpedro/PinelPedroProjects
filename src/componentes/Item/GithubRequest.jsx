@@ -82,7 +82,7 @@ const GithubRequest = () => {
 
             <button className="button button-primary">
               <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                View on GitHub
+                Veja No Github
               </a>
             </button>
           </div>

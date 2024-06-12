@@ -16,11 +16,14 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h4>Entre em Contato</h4>
-          <form className="contact-form">
-            <input type="text" placeholder="Seu Nome" required />
-            <input type="email" placeholder="Seu Email" required />
-            <textarea placeholder="Deixe uma mensagem" required></textarea>
+          <form className="contact-form" method='POST' action="https://formsubmit.co/pinelpedro@gmail.com">
+            <input type="text" name='name' placeholder="Seu Nome" required />
+            <input type="email" name='email' placeholder="Seu Email" required />
+            <textarea placeholder="Deixe uma mensagem" name='message' required></textarea>
             <button type="submit">Send</button>
+            <input type="hidden" name="_subject" value={"NOVO CONTATO!"} />
+            <input type="text" name="_honey" className='none' />
+            <input type="hidden" name="_captcha" value={false} />
           </form>
         </div>
       </div>

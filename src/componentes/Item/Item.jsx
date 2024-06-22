@@ -15,6 +15,7 @@ function ItemMain(){
             <div className="item-main">
             <div className="item-main-img">
                 <ItemSrc></ItemSrc>
+                <div>aaa</div>
             </div>
             <GithubRequest></GithubRequest>
         </div>

@@ -1,21 +1,42 @@
-import { FaReact,FaCss3 ,FaHtml5 ,  } from "react-icons/fa";
-import './About.css'
+import { FaReact, FaCss3, FaHtml5 } from "react-icons/fa";
+import "./About.css";
+import nexticon from '../../Img/nextjs.svg'
 
 
+import estatica from "../../Img/estatica.gif";
 
 function About() {
   return (
-    <div>
-      <h1>Experiencias</h1>
+    <div
+      className="container about-container"
+      style={{ backgroundImage: `url(${estatica})` }}
+    >
+      <div className="static">
+        <h1>Experiencias</h1>
 
-      <p>
-        Discover my arsenal of frontend tools & technologies — TypeScript,
-        React, Redux, Next.js & more. From UI libraries like Material UI &
-        shadcn/ui to custom animations using GSAP & Framer Motion, I deliver
-        stunning user experiences.
-      </p>
+        <p>
+          Durante meus estudos desenvolvi experiencias nas tecnologias: —
+          TypeScript, React, Next.js e mais. Alem de consumo de API e outras
+          bibliotecas... Atualmente dedico meu tempo a encontrar uma vaga na
+          area enquanto desnvolvo meus projetos pessoais e casualmente faço
+          freelance.
+        </p>
 
-      <div>React<FaReact/> Typescript HTML<FaHtml5/> CSS<FaCss3/></div>
+        <div className="icon-area">
+          <div className="icon">
+            <FaReact />
+          </div>
+          <div className="icon">
+            <FaHtml5 />
+          </div>
+          <div className="icon">
+            <FaCss3 />
+          </div>
+          <div className="icon">
+            <img src={nexticon} alt="peidao" className="next"/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

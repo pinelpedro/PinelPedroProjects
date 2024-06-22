@@ -8,6 +8,7 @@
 }
 
 
+
 .wppbutton{
     position: fixed;
     bottom: 60px;
@@ -30,3 +31,11 @@
     overflow: hidden;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .wppbutton {
+        display: none;
+    }
+    
+  }

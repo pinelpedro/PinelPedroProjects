@@ -39,6 +39,13 @@ const GithubRequest = () => {
     return <div>Loading...</div>; // Renderiza um loading enquanto os dados estão sendo buscados
   }
 
+  function pages(){
+    return repos.map((repo, index) => (
+      <div key={index} className="item">
+        {console.log(repo.has_pages)}
+      </div>))
+  }
+
   function ajusteDesc(desc) {
     if (typeof desc === "string") {
       const a = desc.slice(0, 25);
@@ -77,17 +84,34 @@ const GithubRequest = () => {
             )}
             <label className="title label-secondary">{repo.name}</label>
             <p className="descri p-secondary" maxLength="10">
-              {ajusteDesc(repo.description)}{" "}
-            </p>
+              {ajusteDesc(repo.description)?ajusteDesc(repo.description):<div className="descri p-secondary">Sem descrição</div>}
 
-            <button className="button button-primary">
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                Veja No Github
+            </p>
+            <div>
+              <button className="button button-primary">
+                <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                  Veja o Repositorio!
+                </a>
+              </button>
+              {repo.has_pages?
+              <button className="button button-primary">
+              <a href={`https://pinelpedro.github.io/${repo.name}/`} target="_blank" rel="noopener noreferrer">
+              site disponivel
               </a>
             </button>
+              :
+              <button className="button-r">
+              <a href={''} target="_blank" rel="noopener noreferrer">
+              site indisponivel
+              </a>
+            </button>}
+
+               
+            </div>
           </div>
         </div>
       ))}
+       {pages()}
     </div>
     </div>
   );

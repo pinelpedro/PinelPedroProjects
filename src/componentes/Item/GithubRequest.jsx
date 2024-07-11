@@ -42,7 +42,7 @@ const GithubRequest = () => {
   function pages(){
     return repos.map((repo, index) => (
       <div key={index} className="item">
-        {console.log(repo.has_pages)}
+          <p>drogas</p>
       </div>))
   }
 
